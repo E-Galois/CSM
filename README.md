@@ -19,6 +19,6 @@ Training:
 > python train_net.py
 
 ## Acknowledgements
-Our code is mainly based on the code of [`RankMixup`]. This is our example code for training on the CIFAR-100 dataset.
+Our code is mainly based on the code of [`RankMixup`].
 
 ## Citation
