@@ -90,12 +90,15 @@ If you use this work in your research, please cite:
 
 ## Acknowledgements
 
-This implementation builds upon these excellent works:
+We are inspired by these excellent works:
 1. [RankMixup](https://github.com/cvlab-yonsei/RankMixup) [1]
 2. [EDM](https://github.com/NVlabs/edm) [2]
+3. [DM-Improves-AT](https://github.com/wzekai99/DM-Improves-AT) [3]
 
 We thank the authors for sharing their code.
 
-[1] Karras, T., et al. (2022). Elucidating the design space of diffusion-based generative models. *NeurIPS 35*.
+[1] Noh, J., Park, H., Lee, J., & Ham, B. (2023). Rankmixup: Ranking-based mixup training for network calibration. In Proceedings of the IEEE/CVF International Conference on Computer Vision (pp. 1358-1368).
 
-[2] Wang, Z., et al. (2023). Better diffusion models further improve adversarial training. *ICML*.
+[2] Karras, T., Aittala, M., Aila, T., & Laine, S. (2022). Elucidating the design space of diffusion-based generative models. Advances in Neural Information Processing Systems, 35, 26565-26577.
+
+[3] Wang, Z., Pang, T., Du, C., Lin, M., Liu, W., & Yan, S. (2023, July). Better diffusion models further improve adversarial training. In International Conference on Machine Learning (pp. 36246-36263). PMLR.
