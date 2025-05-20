@@ -1,0 +1,11 @@
+name: ce_l2
+alpha: 0.1 #0.1
+gamma: 1.0
+num_classes: 10 # cifar10 10  tiny 200
+ignore_index: -100
+
+object:
+  _target_: calibrate.losses.CeL2Loss
+  num_classes: ${loss.num_classes}
+  ignore_index: ${loss.ignore_index}
+

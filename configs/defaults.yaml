@@ -1,0 +1,35 @@
+hydra:
+  run:
+    dir: ./workspace/log/calib_outputs/${data.name}/${model.name}-${loss.name}-${optim.name}/${now:%Y%m%d-%H:%M:%S-%f}
+
+defaults:
+  - data: cifar100
+  - model: resnet50_mixup
+  - loss: ce_l2
+  - optim: sgd
+  - scheduler: multi_step
+  - wandb: my
+  - override hydra/job_logging: custom
+  - _self_
+
+task: cv #cv segment
+device: cuda:0
+seed: 12345
+log_period: 100
+train:
+  clip_grad_norm: True
+  max_epoch: 200
+  resume: True
+  mixup: False # original RankMixup
+  generative_mixup: True # CSM
+  keep_checkpoint_num: 1
+  keep_checkpoint_interval: 500
+calibrate:
+  num_bins: 15
+  visualize: True
+test:
+  checkpoint: ""
+  save_logits: False
+  post_temperature: False
+wandb:
+  enable: False

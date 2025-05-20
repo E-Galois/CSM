@@ -1,0 +1,10 @@
+ipdb
+albumentations
+opencv-python
+hydra-core
+flake8
+wandb
+terminaltables
+matplotlib
+plotly
+pandas
